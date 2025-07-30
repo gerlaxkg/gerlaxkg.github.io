@@ -3,25 +3,57 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GERLAX Главная</title>
-    <link rel="stylesheet" href="style.css">
+    <title>GERLAX - Интернет-магазин аксессуаров</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f8f5; margin: 0; padding: 0; color: #134e4a;}
+        header { background-color: #0f766e; padding: 20px; color: white; text-align: center; }
+        h1 { margin: 0; }
+        .catalog { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+        .card {
+            background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 10px; width: 280px; padding: 15px; color: #134e4a;
+            display: flex; flex-direction: column; align-items: center;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: scale(1.05); }
+        .card img { width: 240px; height: auto; border-radius: 4px; }
+        .card h2 { font-size: 18px; margin: 10px 0 5px; }
+        .card p { font-size: 14px; margin: 5px 0; }
+        .price { font-weight: bold; color: #059669; font-size: 16px; margin-top: auto; }
+        footer { background: #0f766e; color: white; text-align: center; padding: 15px; margin-top: 30px;}
+        a { color: #a7f3d0; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-
-<nav class="navbar">
-  <a href="index.html">Главная</a>
-  <a href="about.html">О нас</a>
-  <a href="contacts.html">Контакты</a>
-</nav>
-
-<h1>Добро пожаловать в GERLAX!</h1>
-<p>Мы продаем лучшие сотовые аксессуары: наушники, зарядки, Bluetooth-колонки и многое другое.</p>
-<img src="insta1.jpg" alt="Инстаграм GERLAX" style="width: 300px;">
-
-<a href="https://wa.me/996553335542" class="whatsapp-float" target="_blank" title="Написать в WhatsApp">
-    &#128172;
-</a>
-
+    <header>
+        <h1>GERLAX</h1>
+        <p>Интернет-магазин аксессуаров: наушники, зарядки, кабели, автотовары и другое</p>
+    </header>
+    <section class="catalog">
+        <div class="card">
+            <img src="assets/images/A8L.jpg" alt="Зарядное устройство GERLAX A8L">
+            <h2>Зарядное устройство GERLAX A8L, 20W PD</h2>
+            <p>Белый, 1x PD, кабель USB-C to Lightning, мощность 20W</p>
+            <p class="price">600 сом</p>
+        </div>
+        <div class="card">
+            <img src="assets/images/GH40.jpg" alt="Беспроводные наушники GERLAX GH-40">
+            <h2>Беспроводные наушники GERLAX GH-40, Bluetooth V5.3, 160H</h2>
+            <p>Чёрный, Bluetooth 5.0, слот SD, управление 3 кнопками, влагостойкие</p>
+            <p class="price">1200 сом</p>
+        </div>
+        <div class="card">
+            <img src="assets/images/GC-M7.jpg" alt="Модулятор GERLAX GCM7">
+            <h2>Модулятор GERLAX GCM7</h2>
+            <p>Чёрный с красной вставкой, BT/USB, RGB-подсветка, 35W PD</p>
+            <p class="price">900 сом</p>
+        </div>
+    </section>
+    <footer>
+        <p>Адреса: г. Кант, ул. Ленина 68/2 | Рынок Дордой, Джунхай, 7 проход, 52 контейнер</p>
+        <p>Телефоны: +996 553 335 542 (WhatsApp), +996 888 211 111</p>
+        <p>Instagram: <a href="https://www.instagram.com/gerlaxkg" target="_blank">@gerlaxkg</a></p>
+    </footer>
 </body>
 </html>
